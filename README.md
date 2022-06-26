@@ -19,6 +19,8 @@ The previous goals are connected to `underfitting` and `overfitting`, which resp
 
 ![overfitting explained](https://miro.medium.com/max/1400/1*_7OPgojau8hkiPUiHoGK_w.png)
 
+### Is more data needed?
+
 For further reading, see
 ```
 @Book{GoodBengCour16,
@@ -42,7 +44,7 @@ Determining wether to gather more data
 
 ## Linear Regression
 
-# Neural Net
+## Neural Net
 
 ## List of files
 ```python
