@@ -2,7 +2,7 @@
 ![sample image horseracing](https://wallpaperaccess.com/full/2107537.jpg)
 
 # Description
-This repo is meant to give a soft introduction to some important concepts and examples on applying Machine Learning towards predicting the outcome of horse races based on attributes connected to each horse. We will be using popular DS packages like scikit-learn and Pytorch for our models. This particular problem would be referred to as `Binary Classification` since the outcome for each horse can only be a win or loss which we can map to 0 or 1 for use in our models.
+This repo is meant to give a soft introduction to some important concepts and examples on applying Machine Learning towards predicting the outcome of horse races based on attributes connected to each horse. We will be using popular DS packages like scikit-learn and Pytorch for our Linear Regression and Neural Net models. This particular problem would be referred to as `Binary Classification` since the outcome for each horse can only be a win or loss which we can map to 0 or 1 for use in our models.
 
 It is meant as a favor to a friend with a dataset and keen interest in ML but limited previous experience and is therefore likely best suited towards similar individuals with little to no background in ML.
 
@@ -46,6 +46,21 @@ Determining wether to gather more data
 ## Linear Regression
 
 ## Neural Net
+While knowledge of the math behind a neural net would be preferred this isn't strictly needed to start a beginner Neural Net implementation as most modern high-level ML frameworks such as Pytorch provides functions doing it for us. It is however needed to know of the buildingblocks that makes up our network.
+
+init weights
+forward pass, 
+
+### Activation function
+
+prediction,
+### Loss Function
+
+### Optimizer
+Adam
+backward propagation, weights
+
+### 
 
 ## List of files
 ```python
