@@ -15,12 +15,9 @@ How well a model learns the underlying distribution from training data and trans
 2. Make the gap between training and test error small
 
 ### Capacity, overfitting and underfitting
-The previous goals are connected to `underfitting` and `overfitting`, which respectively means that a model is not able to learn from the training set (low training accuracy) and that a model fits training data too perfectly without generalizing well to new data.
+The previous goals are connected to `underfitting` and `overfitting`, which respectively means that a model is not able to learn from the training set (low training accuracy) and that a model fits training data too perfectly without generalizing well to new data. This is controlled by regulating a models capacity. Capacity describes how a model is able to approximate various functions. Too low capacity means a model likely will not be able fit the training set, while too high leaves it prone to overfitting. More specifically, this explains why all problems aren't immediately targeted with the largest most advanced networks one could think of, as being allowed more functions possibly containing a better approximation doesn't guarantee the model will pick it. As a closing remark, the best performing ML algorithm will often be the one with a capacity close to the true complexity of the problem and adequate to the amount of available training data.
 
 ![overfitting explained](https://miro.medium.com/max/1400/1*_7OPgojau8hkiPUiHoGK_w.png)
-
-
-Cross validation
 
 For further reading, see
 ```
