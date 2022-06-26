@@ -9,11 +9,15 @@ It is meant as a favor to a friend with a dataset and keen interest in ML but li
 ## Important Principles
 There is a fundamental difference between the traditional way of solving a system and the ML approach of learning a mapping between input and output. A known truth is that a feedforward network with a single layer is sufficient to represent any function, but what if our model learns a convoluted model that perfectly maps training data but fails to perform on new unseen data? Our model would merely be memorizing the training data without actually learning!
 
+### Generalization
 How well a model learns the underlying distribution from training data and translates that to new samples is referred to as a models `generalization`. To properly evaluate a model it is therefore common to set aside some data in a separate `test set` (and ideally a `validation set` for NN as the tuning of hyperparameters directly on the test set would introduce a bias). Common splits are roughly `80% Train / 20% Test` (`80% Train / 10% Val / 10% Test`) which is done easily e.g. in scikit-learn [`sklearn.model_selection.train_test_split(args)`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html). We then consider both training and test accuracy and wish to:
 1. Make training error small
 2. Make the gap between training and test error small
 
-Capacity, overfitting and underfitting
+### Capacity, overfitting and underfitting
+The previous goals are connected to `underfitting` and `overfitting`, which respectively means that a model is not able to learn from the training set (low training accuracy) and that a model fits training data too perfectly without generalizing well to new data.
+
+![overfitting explained](https://miro.medium.com/max/1400/1*_7OPgojau8hkiPUiHoGK_w.png)
 
 
 Cross validation
@@ -35,7 +39,7 @@ For further reading, see
 If Neural Nets are 
 
 If 
-![overfitting explained](https://miro.medium.com/max/1400/1*_7OPgojau8hkiPUiHoGK_w.png)
+
 
 Determining wether to gather more data
 
@@ -44,3 +48,6 @@ Determining wether to gather more data
 # Neural Net
 
 ## List of files
+```python
+
+```
