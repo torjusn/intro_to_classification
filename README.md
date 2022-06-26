@@ -20,6 +20,7 @@ The previous goals are connected to `underfitting` and `overfitting`, which resp
 ![overfitting explained](https://miro.medium.com/max/1400/1*_7OPgojau8hkiPUiHoGK_w.png)
 
 ### Is more data needed?
+As a rule of thumb, if unable to obtain decent accuracy on the training data the model is not able to properly learn from the available data and more data is not needed. To remedy this, consider a more complex model (i.e. adding more width or depth for NN) until able to overfit on the training data. If however training accuracy is good but testing set accuracy abysmal more data is often beneficial. Finally, if complex models are not even able to learn the training data it is possible that the input needed to predict output is not there and new or higher quality data is needed.
 
 For further reading, see
 ```
