@@ -1,4 +1,4 @@
-# Intro to Binary Classification on Horse Racing Data
+# Intro to Binary Classification 
 ![sample image horseracing](https://wallpaperaccess.com/full/2107537.jpg)
 
 # Description
