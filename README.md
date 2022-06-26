@@ -1,4 +1,4 @@
-# Intro to Binary Classification of Timeseries data
+# Intro to Binary Classification on Horse Racing Data
 ![sample image horseracing](https://wallpaperaccess.com/full/2107537.jpg)
 
 # Description
@@ -6,8 +6,13 @@ This repo is meant to give a soft introduction to some important concepts and ex
 
 It is meant as a favor to a friend with a dataset and keen interest in ML but limited previous experience and is therefore likely best suited towards similar individuals with little to no background in ML.
 
-## Choice of model and discussion
+## Choice of model and important principles
+Difference between training a model and solving a system
+Capacity, overfitting and underfitting
+
+If 
 ![overfitting explained](https://miro.medium.com/max/1400/1*_7OPgojau8hkiPUiHoGK_w.png)
 
+Determining wether to gather more data
 
 ## List of files
