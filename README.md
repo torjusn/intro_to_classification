@@ -1,7 +1,7 @@
 # Intro to Binary Classification 
 ![sample image horseracing](https://wallpaperaccess.com/full/2107537.jpg)
 
-# Description
+## Description
 The goal of this repo is to give a soft introduction to Machine Learning through examples and theory. Our problem is to predict the outcome of horse races based on  a set of numerical attributes connected to each horse. This particular problem is referred to as `Binary Classification` since the outcome for each horse can only be a win or loss which we can map to 0 or 1 for use in our models.
 
 We will be using the popular DS python packages `scikit-learn` for Linear Regression and `Pytorch` for our Neural Net. [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html) is recommended but not necessary as it installs python and package versions in a separate environment per project.
@@ -12,7 +12,7 @@ The repo is a favor to a friend with a dataset and keen interest in ML but limit
 There is a fundamental difference between the traditional way of solving a system and the ML approach of learning a mapping between input and output. A known truth is that a feedforward network with a single layer is sufficient to represent any function, but what if our model learns a convoluted model that perfectly maps training data but fails to perform on new unseen data? Our model would merely be memorizing the training data without actually learning!
 
 ### Generalization
-How well a model learns the underlying distribution from training data and translates that to new samples is referred to as a models `generalization`. To properly evaluate a model it is therefore common to set aside some data in a separate `test set` (and ideally a `validation set` for NN as the tuning of hyperparameters directly on the test set would introduce a bias). Common splits are roughly `80% Train / 20% Test` (`80% Train / 10% Val / 10% Test`) which is done easily e.g. in scikit-learn [`sklearn.model_selection.train_test_split(args)`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html). We then consider both training and test accuracy and wish to:
+How well a model learns the underlying distribution from training data and translates that to new unseen data is referred to as a models `generalization`. To properly evaluate a model it is therefore common to set aside some data in a separate `test set` (and ideally a `validation set` for NN as the tuning of hyperparameters directly on the test set would introduce a bias). Common splits are roughly `80% Train / 20% Test` (`80% Train / 10% Val / 10% Test`) which is done easily e.g. in scikit-learn [`sklearn.model_selection.train_test_split(args)`](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html). We then consider both training and test accuracy and wish to:
 1. Make training error small
 2. Make the gap between training and test error small
 
@@ -37,34 +37,47 @@ For further reading, see
 }
 ```
 
-### Choice of model
-If Neural Nets are 
+## Prerequisites
+- [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html)
+- [`git`](https://git-scm.com/download/win)
+Follow the links above and install.
 
-If 
+## Getting started
+Open a new prompt (similar to cmd for conda) by pressing the start button, searching for `Anaconda Prompt (miniconda3)`, and pressing it.
 
+Create a new folder called `git` and navigate to it:
+```
+mkdir git
+cd git
+```
 
-Determining wether to gather more data
+Clone the repo to this local folder on your pc by running:
+```
+git clone https://github.com/torjusn/intro_to_classification.git
+```
 
-## Linear Regression
+Create a new conda environment called `intro` with python 3.10:
+```
+conda create --name intro python=3.10
+```
 
-## Neural Net
-While knowledge of the math behind a neural net would be preferred this isn't strictly needed to start a beginner Neural Net implementation as most modern high-level ML frameworks such as Pytorch provides functions doing it for us. It is however needed to have some understanding of the building blocks that makes up our network.
+Activate the environment
+```
+conda activate intro
+```
 
-In short 
+Install packages from the `requirements.txt` file. (If you want to try installing packages on your own use `pip install <package>`):
+```
+pip install -r requirements.txt
+```
 
-init weights
-forward pass, 
+Change directory to the linear regression subdirectory and run it:
+```
+cd linreg
+python linreg.py
+```
 
-### Activation function
-
-prediction,
-### Loss Function
-
-### Optimizer
-Adam
-backward propagation, weights
-
-### 
+Check the [`conda cheatsheet`](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html) for more help on conda.
 
 ## List of files
 ```python
