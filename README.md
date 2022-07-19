@@ -2,11 +2,11 @@
 ![sample image horseracing](https://wallpaperaccess.com/full/2107537.jpg)
 
 # Description
-The goal of this repo is to give a soft introduction to some important concepts and examples on applying Machine Learning towards predicting the outcome of horse races based on attributes connected to each horse. This particular problem would be referred to as `Binary Classification` since the outcome for each horse can only be a win or loss which we can map to 0 or 1 for use in our models.
+The goal of this repo is to give a soft introduction to Machine Learning through examples and theory. Our problem is to predict the outcome of horse races based on  a set of numerical attributes connected to each horse. This particular problem is referred to as `Binary Classification` since the outcome for each horse can only be a win or loss which we can map to 0 or 1 for use in our models.
 
-We will be using popular DS packages like `scikit-learn` for Linear Regression and `Pytorch` for our Neural Net. 
+We will be using the popular DS python packages `scikit-learn` for Linear Regression and `Pytorch` for our Neural Net. [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html) is recommended but not necessary as it installs python and package versions in a separate environment per project.
 
-It a favor to a friend with a dataset and keen interest in ML but limited previous experience and is therefore likely best suited towards similar individuals with little to no background in ML.
+The repo is a favor to a friend with a dataset and keen interest in ML but limited previous experience and is therefore likely best suited towards similar individuals with little to no background in ML.
 
 ## Important Principles
 There is a fundamental difference between the traditional way of solving a system and the ML approach of learning a mapping between input and output. A known truth is that a feedforward network with a single layer is sufficient to represent any function, but what if our model learns a convoluted model that perfectly maps training data but fails to perform on new unseen data? Our model would merely be memorizing the training data without actually learning!
