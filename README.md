@@ -66,7 +66,7 @@ Activate the environment
 conda activate intro
 ```
 
-Install packages from the `requirements.txt` file. (If you want to try installing packages on your own use `pip install <package>`):
+Install packages from the `requirements.txt` file. (If you want to try installing packages on your own, google the package name and use `pip install <package>`):
 ```
 pip install -r requirements.txt
 ```
@@ -77,7 +77,7 @@ cd linreg
 python linreg.py
 ```
 
-Check the [`conda cheatsheet`](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html) for more help on conda.
+Check the [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html) for more help on conda.
 
 ## List of files
 ```python
