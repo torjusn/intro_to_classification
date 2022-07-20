@@ -2,11 +2,11 @@
 ![sample image breastcancer](breastcancer_wisconsin_dataset.jpg)
 
 ## Description
-The goal of this repo is to give a soft introduction to Machine Learning through examples and theory. Our task is to predict wether a patient is positive or negative for breastcancer based on a set of 30 numerical feature variables, but the methodology is applicable to any problem of predicting if a target is true or false based on one or more explanatory variables. If some your custom data comes in the form of groups, e.g. `[French, German, Italian, German]` you should first google `encoding categorical data` to change it into numerical input accepted by ML models. This particular problem is often referred to as `Binary Classification` since the outcome can only be one of two values.
+The goal of this repo is to give a soft introduction to Machine Learning through examples and theory. Our task is to predict wether a patient is positive or negative for breastcancer based on a set of 30 numerical feature variables, but the methodology is applicable to any problem of prediction where you wish to predict if a target is true or false based on one or more explanatory variables. If some your custom data comes in the form of groups, e.g. `[French, German, Italian, German]` you should first google `encoding categorical data` to change it into numerical input accepted by ML models. This particular problem is often referred to as `Binary Classification` since the outcome can only be one of two values.
 
 We will be using the popular DS python packages `scikit-learn` for Linear Regression and `Pytorch` for our Neural Net. [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html) is recommended but not necessary as it installs python and package versions in a separate environment per project.
 
-The repo is a favor to a friend with a dataset and keen interest in ML but limited previous experience and is therefore likely best suited towards similar individuals with little to no background in ML.
+The repo is a favor to a friend with a dataset and keen interest in ML but limited previous experience and is therefore likely best suited towards similar individuals with little to no background in ML or Python.
 
 ## Important Principles
 There is a fundamental difference between the traditional way of solving a system and the ML approach of learning a mapping between input and output. A known truth is that a feedforward network with a single layer is sufficient to represent any function, but what if our model learns a convoluted model that perfectly maps training data but fails to perform on new unseen data? Our model would merely be memorizing the training data without actually learning!
@@ -40,10 +40,10 @@ For further reading, see
 ## Prerequisites
 - [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html)
 - [`git`](https://git-scm.com/download/win)
-Follow the links above and install.
+Follow the links above and install both.
 
 ## Getting started
-Open a new prompt (similar to cmd for conda) by pressing the start button, searching for `Anaconda Prompt (miniconda3)`, and pressing it.
+Open a new prompt (similar to cmd for conda) by start button &rarr; searching for `Anaconda Prompt (miniconda3)`, and pressing it.
 
 Create a new folder called `git` and navigate to it:
 ```
@@ -71,15 +71,10 @@ Install packages from the `requirements.txt` file. (If you want to try installin
 pip install -r requirements.txt
 ```
 
-Change directory to the linear regression subdirectory and run it:
+Change directory to the classical methods subdirectory and run the main script:
 ```
-cd linreg
-python linreg.py
+cd classical_methods
+python main.py
 ```
 
 Check the [conda cheatsheet](https://docs.conda.io/projects/conda/en/latest/user-guide/cheatsheet.html) for more help on conda.
-
-## List of files
-```python
-
-```
