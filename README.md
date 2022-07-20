@@ -1,5 +1,5 @@
 # Intro to Binary Classification 
-![sample image horseracing](https://wallpaperaccess.com/full/2107537.jpg)
+![sample image breastcancer](breastcancer_wisconsin_dataset.jpg)
 
 ## Description
 The goal of this repo is to give a soft introduction to Machine Learning through examples and theory. Our task is to predict wether a patient is positive or negative for breastcancer based on a set of 30 numerical feature variables, but the methodology is applicable to any problem of predicting if a target is true or false based on one or more explanatory variables. If some your custom data comes in the form of groups, e.g. `[French, German, Italian, German]` you should first google `encoding categorical data` to change it into numerical input accepted by ML models. This particular problem is often referred to as `Binary Classification` since the outcome can only be one of two values.
