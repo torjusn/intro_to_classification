@@ -43,7 +43,10 @@ For further reading, see
 Follow the links above and install both.
 
 ## Getting started
-Open a new prompt (similar to cmd for conda) by start button &rarr; searching for `Anaconda Prompt (miniconda3)`, and pressing it.
+Open a new prompt (similar to cmd for conda) by 
+```
+start button &rarr; search `Anaconda Prompt (miniconda3)`
+```
 
 Create a new folder called `git` and navigate to it:
 ```
