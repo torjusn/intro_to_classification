@@ -39,12 +39,12 @@ For further reading, see
 
 ## Prerequisites
 - [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html)
-- [`git`](https://git-scm.com/download/win)
-Follow the links above and install both.
+- [`git`](https://git-scm.com/download/win)  
+Follow the links above and install both programs.
 
 ## Getting started
 Open a new prompt (similar to cmd for conda) by:  
-press `start button` &rarr; search `Anaconda Prompt (miniconda3)`
+pressing `start button` &rarr; searching `Anaconda Prompt (miniconda3)`
 
 Create a new folder called `git` and navigate to it:
 ```
@@ -52,7 +52,7 @@ mkdir git
 cd git
 ```
 
-Clone the repo to this local folder on your pc by running:
+Clone this repo to your local git-folder by running:
 ```
 git clone https://github.com/torjusn/intro_to_classification.git
 ```
