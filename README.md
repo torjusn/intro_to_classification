@@ -2,7 +2,7 @@
 ![sample image horseracing](https://wallpaperaccess.com/full/2107537.jpg)
 
 ## Description
-The goal of this repo is to give a soft introduction to Machine Learning through examples and theory. Our problem is to predict the outcome of horse races based on  a set of numerical attributes connected to each horse. This particular problem is referred to as `Binary Classification` since the outcome for each horse can only be a win or loss which we can map to 0 or 1 for use in our models.
+The goal of this repo is to give a soft introduction to Machine Learning through examples and theory. Our task is to predict wether a patient is positive or negative for breastcancer based on a set of 30 numerical feature variables, but the methodology is applicable to any problem of predicting if a target is true or false based on one or more explanatory variables. If some your custom data comes in the form of groups, e.g. `[French, German, Italian, German]` you should first google `encoding categorical data` to change it into numerical input accepted by ML models. This particular problem is often referred to as `Binary Classification` since the outcome can only be one of two values.
 
 We will be using the popular DS python packages `scikit-learn` for Linear Regression and `Pytorch` for our Neural Net. [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html) is recommended but not necessary as it installs python and package versions in a separate environment per project.
 
