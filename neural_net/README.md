@@ -9,6 +9,6 @@ We can stack several neurons together in a layer, and then add several layers to
 ![model image](neural_net.jpg)
 
 Sending the input once from left to right to generate a prediction is called a `forward pass`. After the forward pass we want to alter the weights based on how "wrong" our predictions were. This is quantified by a loss function that we want to iteratively minimize. We minimize through an optimization function that calculates the gradient (steepest ascent) of the loss function w.r.t. the weights and uses its negative as the direction towards smaller loss. The amount of change in this direction is given by a manually set hyperparameter called `learning rate`. Updating the weights through this process is called `backward pass`.
-![loss](loss_gradient_descent.jpg)
+![loss](loss_gradient_descent.jpeg)
 
 Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation loss starts decreasing as this is the point the model stops learning a representation and starts memorizing the actual datapoints.
