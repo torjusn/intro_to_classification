@@ -16,27 +16,28 @@ Sending the input once from left to right to generate a prediction is called a `
 Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation accuracy/loss starts decreasing as this is the point where the model stops learning a representation and starts memorizing the actual datapoints.
 
 ## In Pytorch
-A m model
+2-layer fully connected model as discussed above. `in_channels` is equal to number of features, `[64, 128]` are the number of neurons in the hidden layers, and `ReLU` is used as non-linear activation function.
 ```python
 class BinaryClassifier(torch.nn.Module):
     def __init__(self, in_channels):
         super(BinaryClassifier, self).__init__()
         
         self.linear1 = torch.nn.Linear(in_channels, 64)
-        self.linear2 = torch.nn.Linear(64, 1)
+        self.linear2 = torch.nn.Linear(64, 128)
+        self.linear3 = torch.nn.Linear(128, 1)
 
         self.activation = torch.nn.ReLU()
 
     def forward(self, x):
 
         x = self.activation(self.linear1(x))
-        x = self.linear2(x)
+        x = self.activation(self.linear2(x))
 
         x = self.linear3(x)
 
         return x
 ```
-Loss and Optimizer
+Loss and Optimizer.
 ```python
 criterion = nn.BCEWithLogitsLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
