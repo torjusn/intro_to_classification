@@ -14,3 +14,30 @@ Sending the input once from left to right to generate a prediction is called a `
 ![loss](loss_gradient_descent.jpeg)
 
 Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation accuracy/loss starts decreasing as this is the point where the model stops learning a representation and starts memorizing the actual datapoints.
+
+## In Pytorch
+A m model
+```python
+class BinaryClassifier(torch.nn.Module):
+    def __init__(self, in_channels):
+        super(BinaryClassifier, self).__init__()
+        
+        self.linear1 = torch.nn.Linear(in_channels, 64)
+        self.linear2 = torch.nn.Linear(64, 1)
+
+        self.activation = torch.nn.ReLU()
+
+    def forward(self, x):
+
+        x = self.activation(self.linear1(x))
+        x = self.linear2(x)
+
+        x = self.linear3(x)
+
+        return x
+```
+Loss and Optimizer
+```python
+criterion = nn.BCEWithLogitsLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
+```
