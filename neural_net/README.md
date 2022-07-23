@@ -42,3 +42,9 @@ Loss and Optimizer.
 criterion = nn.BCEWithLogitsLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 ```
+
+## Usage
+Train the model by running the following in terminal
+```
+python train
+```
