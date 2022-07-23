@@ -13,4 +13,4 @@ Sending the input once from left to right to generate a prediction is called a `
 
 ![loss](loss_gradient_descent.jpeg)
 
-Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation loss starts decreasing as this is the point the model stops learning a representation and starts memorizing the actual datapoints.
+Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation accuracy/loss starts decreasing as this is the point where the model stops learning a representation and starts memorizing the actual datapoints.
