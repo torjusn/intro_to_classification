@@ -5,26 +5,10 @@ While knowledge of the math behind a neural net would be preferred this isn't st
 
 The point in our case is to learn a mapping $f$ from input vector $\textbf{x}$ to correct output $y$ s.t. $f(\textbf{x}) = y$. The header image shows one fully connected `neuron`, as an example of a mapping. The neuron is connected to all inputs, multiplies each input by a weight $w$ and adds a scalar bias $b$. These are trainable parameters modified during training by a gradient to better fit our mapping. Finally, this is sent through an activation function to generate an output. We often use non-linear activations like `ReLU` since this makes our linear weightlayer able to learn non-linear mappings.
 
-We can stack several neurons together in a layer, and then add several layers to make the layers learn different properties of our data and thus a more complex mapping. This structure is called network model or architecture and an example image is shown below.
+We can stack several neurons together in a layer, and then add several layers to make the layers learn different properties of our data and thus a more complex mapping. One often uses specialized weight layers depending on the input data. Common ones are convolutions for computer vision, recurrency for timeseries and linear (fully connected) layers for numerical input. The structure of neuron widths and layers is called network model or architecture and an example image is shown below.
 ![model image](neural_net.jpg)
 
-Sending the input once from left to right to generate a prediction is called a `forward pass`. After the forward pass we want to alter the weights based on how "wrong" our predictions were. This is quantified by a loss function that we want to iteratively minimize. We minimize through an optimization function that calculates the gradient (steepest ascent) and uses its negative to move towards smaller loss as shown below
+Sending the input once from left to right to generate a prediction is called a `forward pass`. After the forward pass we want to alter the weights based on how "wrong" our predictions were. This is quantified by a loss function that we want to iteratively minimize. We minimize through an optimization function that calculates the gradient (steepest ascent) of the loss function w.r.t. the weights and uses its negative as the direction towards smaller loss. The amount of change in this direction is given by a manually set hyperparameter called `learning rate`. Updating the weights through this process is called `backward pass`.
 ![loss](loss_gradient_descent.jpg)
 
-
-One often uses specialized weight layers depending on the input data. Common ones are convolutions for computer vision, recurrency for timeseries and linear (fully connected) layers for numerical input.
-
-init weights
-forward pass, 
-
-Alternate forward and backward passes for a given number of epochs.
-epoch
-
-## Activation function
-TODO describe ReLU, describe final activation
-
-## Loss Function
-
-## Optimizer
-Adam
-backward propagation, weights
+Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation loss starts decreasing as this is the point the model stops learning a representation and starts memorizing the actual datapoints.
