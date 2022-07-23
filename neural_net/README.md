@@ -16,7 +16,7 @@ Sending the input once from left to right to generate a prediction is called a `
 Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation accuracy/loss starts decreasing as this is the point where the model stops learning a representation and starts memorizing the actual datapoints.
 
 ## In Pytorch
-2 hidden layer fully connected model as discussed above. `in_channels` is equal to number of features, `[64, 128]` are the number of neurons in the hidden layers, and `ReLU` is used as non-linear activation function. The final layer outputs a one dimension prediction of raw logits $\infty$
+2 hidden layer fully connected model as discussed above. `in_channels` is equal to number of features, `[64, 128]` are the number of neurons in the hidden layers, and `ReLU` is used as non-linear activation function. The final layer outputs a one dimension prediction of raw logits in the range $(-\infty, \infty)$.
 ```python
 class BinaryClassifier(torch.nn.Module):
     def __init__(self, in_channels):
