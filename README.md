@@ -39,9 +39,8 @@ For further reading, see
 
 ## Prerequisites
 - [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html) (recommended)
+- [`git`](https://git-scm.com/download/win)
 - `Python 3.10`
-- [`git`](https://git-scm.com/download/win)  
-Follow the links above and install both programs.
 
 ## Getting started
 Open a new prompt (similar to cmd for conda) by:  
