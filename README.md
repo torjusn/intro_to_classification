@@ -38,7 +38,8 @@ For further reading, see
 ```
 
 ## Prerequisites
-- [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html)
+- [`Miniconda`](https://docs.conda.io/en/latest/miniconda.html) (recommended)
+- Python 3.10
 - [`git`](https://git-scm.com/download/win)  
 Follow the links above and install both programs.
 
