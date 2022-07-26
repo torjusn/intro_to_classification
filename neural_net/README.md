@@ -22,7 +22,7 @@ Sending the input once from left to right to generate a prediction is called a `
 Forward and backward passes are alternated for a given number of epochs while training and validation loss is monitored. The most important goal is that the model generalises well to unseen data, hence training is often discontinued when training loss keeps increasing but validation accuracy/loss starts decreasing as this is the point where the model stops learning a representation and starts memorizing the actual datapoints.
 
 ### ReLU Activation
-ReLU stands for Rectified Linear Unit and its mathematical formula is very simple:
+ReLU stands for Rectified Linear Unit and its mathematical formula is very simple:  
 $$ max(0, z) $$
 It is 0 for negative input and mirrors its input above 0. As shown in the image below it is piece-wise linear but not in the transition at 0, which makes it able to approximate non-linear functions.  
 
