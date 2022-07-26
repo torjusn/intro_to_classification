@@ -23,7 +23,9 @@ Forward and backward passes are alternated for a given number of epochs while tr
 
 ### ReLU Activation
 ReLU stands for Rectified Linear Unit and its mathematical formula is very simple:  
+
 $$ max(0, z) $$
+
 It is 0 for negative input and mirrors its input above 0. As shown in the image below it is piece-wise linear but not in the transition at 0, which makes it able to approximate non-linear functions.  
 
 ![relu](relu.png)
